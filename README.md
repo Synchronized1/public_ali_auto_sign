@@ -2,7 +2,7 @@
 使用github action,理论每天00:00,00:05,00:10签到三次(防止签不上)，微信通知。
 
 该方法需要的参数:
-> pushplus的token
+> pushplus的token  
 ali网盘的refresh_token(一个月之后需要替换)
 ## 1.获取pushplus的Token(用于将签到信息推送给微信)
 - 官网:https://pushplus.plus/
