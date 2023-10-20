@@ -6,10 +6,10 @@
 ali网盘的refresh_token(一个月之后需要替换)
 ## 1.获取pushplus的Token(用于将签到信息推送给微信)
 - 官网:https://pushplus.plus/
-![image](https://github.com/Synchronized1/alipan_auto_sign/assets/58451554/f9d84bca-98f1-4028-a910-a557c59f533d)
+![image](https://i.postimg.cc/QdqvvBDh/pushplus.png)
 - 关注公众号,发送token获取token值(稍后用到)
 
-![image](https://github.com/Synchronized1/alipan_auto_sign/assets/58451554/c57520cb-8248-4036-b4b5-743f79d8ebca)
+![image](https://i.postimg.cc/wTXrst7L/pushplus.png)
 ![image](https://github.com/Synchronized1/alipan_auto_sign/assets/58451554/d704169b-b862-4a57-b0ad-a305c75791f9)
 ## 2.获取阿里网盘的refresh_token
 ![image](https://github.com/Synchronized1/alipan_auto_sign/assets/58451554/b67d9e7c-a4a9-4603-a88d-7534b139732b)
