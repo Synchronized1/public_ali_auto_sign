@@ -3,7 +3,7 @@
 
 该方法需要的参数:
 > pushplus的token  
-ali网盘的refresh_token(已实现自动更新)
+ali网盘的refresh_token(已实现每隔1小时自动刷新)
 ## 1.获取pushplus的Token(用于将签到信息推送给微信)
 - 官网:https://pushplus.plus/
 ![pushplus.png](https://i.postimg.cc/QdqvvBDh/pushplus.png)
