@@ -3,7 +3,7 @@
 
 该方法需要的参数:
 > pushplus的token  
-ali网盘的refresh_token(一个月之后需要替换)
+ali网盘的refresh_token(已实现自动更新)
 ## 1.获取pushplus的Token(用于将签到信息推送给微信)
 - 官网:https://pushplus.plus/
 ![pushplus.png](https://i.postimg.cc/QdqvvBDh/pushplus.png)
@@ -16,7 +16,7 @@ ali网盘的refresh_token(一个月之后需要替换)
 ## 3.将该库导入自己新建的仓库
 ![import-repository.png](https://i.postimg.cc/XYTC5gXY/import-repository.png)
 ## 4.设置Actions和两个变量 refresh_token(refresh_token一个月之后需要替换) 和 pushplus_token
-![set-action.png](https://i.postimg.cc/7YmK7hFW/set-action.png)
+![set-action.png](https://i.postimg.cc/nzJjYW8n/set-action.png)
 ![new-secret.png](https://i.postimg.cc/3xb7LKvL/new-secret.png)
 ![set-secret.png](https://i.postimg.cc/rwgbjgvM/set-secret.png)
 ## 5. 运行测试

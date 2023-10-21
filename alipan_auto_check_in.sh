@@ -1,15 +1,26 @@
 #!/bin/bash
+
 #需要每月更新一次
 refresh_token=$1
+
 #pushplus_token
 pushplus_token=$2
-##获取access_token
-echo $refresh_token
+
+#输出refresh_token
+echo "refresh_token:$refresh_token"
+
+#获取access_token
 access_token_command="curl --location --request POST 'https://auth.aliyundrive.com/v2/account/token' --header 'Content-Type: application/json' --data '{
     \"grant_type\": \"refresh_token\",
     \"refresh_token\": \"$refresh_token\"
 }' | jq '.access_token' | sed 's/\"//g'";
+
+echo $access_token_command
+
 access_token=`eval $access_token_command`
+
+echo "access_token:${access_token}"
+
 if [ "$access_token" = "null" ];
   then 
     pushplus_command="curl --location --request POST 'http://www.pushplus.plus/send/' \
@@ -22,11 +33,13 @@ if [ "$access_token" = "null" ];
     eval $pushplus_command;
 else
 sleep 2
+
 ##自动签到
 header="Authorization: $access_token";
 sign_command="curl --location --request POST 'https://member.aliyundrive.com/v1/activity/sign_in_list' --header '$header' --header 'Content-Type: application/json' --data '{\"_rx-s\":\"mobile\"}'"
 sign_in_count=`eval $sign_command | jq '.result.signInCount'`
 sleep 2
+
 ##领取奖励
 reward_command="curl --location --request POST 'https://member.aliyundrive.com/v1/activity/sign_in_reward?_rx-s=mobile' \
 --header '$header' \
