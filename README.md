@@ -15,7 +15,7 @@ ali网盘的refresh_token(已实现每隔1小时自动刷新)
 ![refresh-token.png](https://i.postimg.cc/ydDtGssP/refresh-token.png)
 ## 3.将该库导入自己新建的仓库
 ![import-repository.png](https://i.postimg.cc/XYTC5gXY/import-repository.png)
-## 4.设置Actions和两个变量 refresh_token(refresh_token一个月之后需要替换) 和 pushplus_token
+## 4.设置Actions和两个变量 refresh_token 和 pushplus_token
 ![set-action.png](https://i.postimg.cc/nzJjYW8n/set-action.png)
 ![new-secret.png](https://i.postimg.cc/3xb7LKvL/new-secret.png)
 ![set-secret.png](https://i.postimg.cc/rwgbjgvM/set-secret.png)
